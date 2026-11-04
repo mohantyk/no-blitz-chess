@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "No Blitz Chess",
+  "version": "1.0",
+  "description": "Blocks Bullet and Blitz time controls on chess.com",
+  "permissions": [],
+  "content_scripts": [{
+    "matches": ["*://www.chess.com/play/online*"],
+    "js": ["content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }],
+  "action": { "default_popup": "popup.html" },
+  "icons": { "48": "icon48.png", "128": "icon128.png" }
+}

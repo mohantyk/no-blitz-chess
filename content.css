@@ -1,0 +1,43 @@
+/* No Blitz Chess - Content Styles */
+
+.nbc-block-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(200, 30, 30, 0.55);
+  cursor: not-allowed;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: inherit;
+  pointer-events: all;
+  user-select: none;
+}
+
+.nbc-overlay-icon {
+  font-size: 1.2em;
+  line-height: 1;
+  pointer-events: none;
+}
+
+#nbc-warning-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100000;
+  background: #b22222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.nbc-start-disabled {
+  opacity: 0.35 !important;
+  pointer-events: none !important;
+  filter: grayscale(60%);
+}

@@ -1,0 +1,12 @@
+{
+  "name": "no-blitz-chess",
+  "version": "1.0.0",
+  "description": "Chrome extension to block Bullet/Blitz on chess.com",
+  "scripts": {
+    "discover": "node test/discover.js",
+    "test": "node test/integration.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.41.0"
+  }
+}
